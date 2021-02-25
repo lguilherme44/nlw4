@@ -16,3 +16,13 @@
     gap: 6.25rem;
     align-content: center;
 }
+
+@media(max-width: 720px) {
+    .container section {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-content: center;
+    }
+  }

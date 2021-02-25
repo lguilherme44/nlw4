@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: var(--white);
+  background: var(--background);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   font-size: 8.5rem;
@@ -22,13 +22,13 @@
   flex: 1;
 }
 
-.countdownContainer > div span:first-child {
+/* .countdownContainer > div span:first-child {
   border-right: 1px solid #f0f1f3;
 }
 
 .countdownContainer > div span:last-child {
   border-left: 1px solid #f0f1f3;
-}
+} */
 
 .countdownContainer > span {
   font-size: 6.25rem;
@@ -56,7 +56,7 @@
 }
 
 .countdownButtonActive {
-  background: var(--white);
+  background: #666;
   color: var(--title);
 }
 

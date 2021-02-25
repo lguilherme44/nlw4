@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --white: #fff;
     --background: #f2f3f5;
     --gray-line: #dcdde0;
@@ -9,6 +9,20 @@
     --green: #4cd62b;
     --blue: #5965e0;
     --blue-dark: #4953b8;
+    --blue-twitter: #2aa9e0;
+} */
+
+:root {
+    --white: #fff;
+    --background: #121214;
+    --gray-line: #29292e;
+    --text: #a8a8b3;
+    --text-highlight: #B3B9FF;
+    --title: #e1e1e6;
+    --red: #e83f5b;
+    --green: #4cd62b;
+    --blue: #2E5EAA;
+    --blue-dark: #2053a5;
     --blue-twitter: #2aa9e0;
 }
 
