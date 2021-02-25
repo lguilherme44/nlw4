@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@types/styled-components": "^5.1.7",
     "next": "10.0.7",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
