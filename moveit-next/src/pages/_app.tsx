@@ -1,11 +1,26 @@
+import React from "react";
+import { ThemeProvider, DefaultTheme } from "styled-components";
 import { ChallengesProvider } from "../context/ChallengesContext";
-import "../styles/global.css";
+import usePersistedState from "../util/persistedState";
+
+import light from "../styles/themes/light";
+import dark from "../styles/themes/dark";
+import GlobalStyle from "../styles/global";
 
 function MyApp({ Component, pageProps }) {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
+
+  const toggleTheme = () => {
+    setTheme(theme.name === "light" ? dark : light);
+  };
+
   return (
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <ChallengesProvider>
+        <Component {...pageProps} toggleTheme={toggleTheme} />
+      </ChallengesProvider>
+    </ThemeProvider>
   );
 }
 
