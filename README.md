@@ -2,7 +2,7 @@
 
 ## Aplicação construida durante o Next Level Week feito pela Rocketseat.
 
-A ideia do App é fazer com que pessoas que trabalham a maior parte do tempo em frente a um computador possam se exercitar-se com vários desafios propóstos pelo App, e a cada desafio concluido, um novo level é atribuido ao usuário.
+A ideia é fazer com que pessoas que trabalham a maior parte do tempo em frente a um computador possam se exercitar-se com vários desafios propóstos pelo App, e a cada desafio concluido, um novo level é atribuido ao usuário.
 
 ## Tecnologias utilizadas
 
