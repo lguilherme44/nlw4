@@ -1,4 +1,5 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
+import { toast } from "react-toastify";
 import challenges from "../../challenges.json";
 interface Challenge {
   type: "body" | "eye";
@@ -31,9 +32,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
-  useEffect(() => {
-    Notification.requestPermission();
-  }, []);
+  useEffect(() => {}, []);
 
   function levelUp() {
     setLevel(level + 1);
@@ -47,11 +46,15 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
     new Audio("/notification.mp3").play();
 
-    if (Notification.permission === "granted") {
-      new Notification("Novo desafio ⚡", {
-        body: `Valendo ${challenge.amount}xp!`,
-      });
-    }
+    toast.dark(`Novo desafio ⚡, valendo ${challenge.amount}xp!`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   }
 
   function resetChallenge() {
