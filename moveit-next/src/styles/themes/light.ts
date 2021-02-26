@@ -1,5 +1,5 @@
 export default {
-    name: 'light',
+    title: 'light',
     colors: {
         background: '#f2f3f5',
         grayLine: '#dcdde0',

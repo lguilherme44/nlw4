@@ -11,8 +11,10 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 
   const toggleTheme = () => {
-    setTheme(theme.name === "light" ? dark : light);
+    setTheme(theme.title === "light" ? dark : light);
   };
+
+  console.log(theme);
 
   return (
     <ThemeProvider theme={theme}>

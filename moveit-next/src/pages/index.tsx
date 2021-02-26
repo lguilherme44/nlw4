@@ -11,9 +11,7 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import { Countdown } from "../components/Countdown";
 
 export default function Home({ toggleTheme }) {
-  const { colors, name } = useContext(ThemeContext);
-
-  console.log(colors, name);
+  const { colors, title } = useContext(ThemeContext);
 
   return (
     <div className={styles.container}>
@@ -38,7 +36,7 @@ export default function Home({ toggleTheme }) {
       <footer className={styles.footer}>
         <Switch
           onChange={toggleTheme}
-          checked={name === "dark"}
+          checked={title === "dark"}
           checkedIcon={false}
           uncheckedIcon={false}
           height={10}
