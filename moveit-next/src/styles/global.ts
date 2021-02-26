@@ -16,13 +16,14 @@ export default createGlobalStyle`
   --text: ${(props) => props.theme.colors.text};
   --text-highlight: ${(props) => props.theme.colors.textHighlight};
   --title: ${(props) => props.theme.colors.title};
+  --invert-white: ${(props) => props.theme.colors.invertWhite};
+  --invert-black: ${(props) => props.theme.colors.invertBlack};
   --red: #E83F5B;
   --green: #4CD62B;
   --blue: #5965E0;
   --blue-dark: #4953B8;
   --blue-twitter: #2AA9E0;
-  --invert-white: ${(props) => props.theme.colors.invertWhite};
-  --invert-black: ${(props) => props.theme.colors.invertBlack};
+  --white: #f5f5f5;
 }
 
 @media(max-width: 1080px) {

@@ -11,5 +11,6 @@ export default {
         blue: '#2E5EAA', 
         blueDark: '#2053a5',
         blueTwitter: '#2aa9e0',
+        white: '#f5f5f5',
     }
 }

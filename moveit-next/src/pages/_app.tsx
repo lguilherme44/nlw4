@@ -14,8 +14,6 @@ function MyApp({ Component, pageProps }) {
     setTheme(theme.title === "light" ? dark : light);
   };
 
-  console.log(theme);
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
