@@ -10,14 +10,11 @@ export default createGlobalStyle`
 }
 
 :root {
-  --shape: ${(props) => props.theme.colors.shape};
   --background: ${(props) => props.theme.colors.background};
   --gray-line: ${(props) => props.theme.colors.grayLine};
   --text: ${(props) => props.theme.colors.text};
   --text-highlight: ${(props) => props.theme.colors.textHighlight};
   --title: ${(props) => props.theme.colors.title};
-  --invert-white: ${(props) => props.theme.colors.invertWhite};
-  --invert-black: ${(props) => props.theme.colors.invertBlack};
   --red: #E83F5B;
   --green: #4CD62B;
   --blue: #5965E0;

@@ -34,3 +34,7 @@
     justify-content: center;
     padding: 2rem 0;
   }
+
+  .footer strong {
+    margin: 1rem 0;
+  }  

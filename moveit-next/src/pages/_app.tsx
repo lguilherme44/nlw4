@@ -20,9 +20,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <ToastContainer />
-      <ChallengesProvider>
-        <Component {...pageProps} toggleTheme={toggleTheme} />
-      </ChallengesProvider>
+      <Component {...pageProps} toggleTheme={toggleTheme} />
     </ThemeProvider>
   );
 }
