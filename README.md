@@ -17,7 +17,7 @@ A ideia é fazer com que pessoas que trabalham a maior parte do tempo em frente 
 ```sh
 1 - git clone https://github.com/lguilherme44/nlw4.git
 2 - yarn ou npm install
-3 - yarn dev ou npm dev
+3 - yarn dev ou npm run dev
 ```
 ## Screenshots
 
